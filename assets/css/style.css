@@ -14,7 +14,7 @@ body, html {
 header {
   height: 10vh;
   width: 100vw;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(5, 5, 5, 0.8549019608);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -72,6 +72,32 @@ header .logo:hover {
   justify-content: center;
   gap: 3rem;
   position: relative;
+}
+.apresentacao::after {
+  content: "";
+  display: block;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: #01C0A9;
+  filter: blur(100px);
+  opacity: 0.2;
+  position: absolute;
+  left: 130px;
+  bottom: 130px;
+}
+.apresentacao::before {
+  content: "";
+  display: block;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: #01C0A9;
+  filter: blur(100px);
+  opacity: 0.2;
+  position: absolute;
+  right: 130px;
+  top: 130px;
 }
 .apresentacao .apre-box1 {
   color: #FFF;
@@ -198,4 +224,117 @@ header .logo:hover {
   color: #292929;
   font-size: 1rem;
   width: 120px;
+}
+
+.projetos {
+  padding: 10rem 0 10rem 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projetos .container_projetos {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.projetos .container_projetos .box-projeto figure {
+  width: 300px;
+  height: 160px;
+}
+.projetos .container_projetos .box-projeto figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px 7px 0 0;
+  transition: 0.2s ease-in-out;
+}
+.projetos .container_projetos .box-projeto figure img:hover {
+  opacity: 0.8;
+}
+.projetos .container_projetos .box-projeto .content-projeto {
+  height: 40px;
+  width: 300px;
+  border-radius: 0 0 7px 7px;
+  background: #FFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.projetos .container_projetos .box-projeto .content-projeto img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+footer {
+  height: 60vh;
+  background: #050505;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+footer p {
+  color: #292929;
+}
+footer .content-contato {
+  text-align: center;
+}
+footer .content-contato h2 {
+  font-size: 36px;
+  color: #FFF;
+}
+footer .content-contato p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #01C0A9;
+}
+footer .social-medias-contato {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+footer .social-medias-contato .email-copy {
+  background: #292929;
+  border-radius: 50px;
+  width: 350px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+footer .social-medias-contato .email-copy a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer .social-medias-contato .email-copy img {
+  width: 20px;
+}
+footer .social-medias-contato .email-copy img:hover {
+  cursor: pointer;
+}
+footer img {
+  width: 35px;
+  transition: 0.2s ease-in-out;
+}
+footer img:hover {
+  transform: scale(1.1);
+}
+footer .btn-arrow-up {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  transition: 0.2s ease-in-out;
+}
+footer .btn-arrow-up:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
