@@ -35,7 +35,7 @@ header{
 
     li{
         list-style: none;
-        margin-right: 35px;
+        margin: 0 35px;
 
         a{
             color: #FFF;
@@ -76,6 +76,15 @@ header{
         &:hover{
             opacity: .8;
         }
+    }
+
+
+    .menu-mobile{
+        display: none;
+    }
+
+    .menu-mobile-items{
+        display: none;
     }
 }
 
@@ -130,9 +139,14 @@ header{
         color: #FFF;
         text-align: center;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         h1{
             font-size: 3rem;
-            width: 600px;
+            font-family: 400;
+            width: 70%;
             margin-bottom: 1rem;
         }
 
@@ -259,7 +273,7 @@ header{
         border: 0;
 
         width: 900px;
-        height: 260px;
+        height: 100%;
 
 
         display: flex;
@@ -333,6 +347,7 @@ header{
                     height: 100%;
                     border-radius: 7px 7px 0 0;
                     transition: .2s ease-in-out;
+                    object-fit: cover;
 
                     &:hover{
                         opacity: .8;
@@ -455,3 +470,81 @@ footer{
     }
 }
 
+// Responsivo
+
+@media screen and (max-width: 1024px) {
+    header{
+
+        justify-content: space-between;
+        padding: 0 4rem;
+
+        nav{
+            display: none;
+        }
+
+        .menu-mobile{
+            display: block;
+
+            button{
+                border: 0;
+                background: 0;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            img{
+                width: 30px;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .menu-mobile-items{
+
+            background: #050505da;
+            display: none;
+            position: absolute;
+            top: 70px;
+            width: 100%;
+            height: 30vh;
+            left: 0;
+
+            ul{
+
+                width: 100%;
+                height: 30vh;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+
+                a{
+                    padding: 10px;
+                }
+
+                
+            }
+
+
+        }
+
+        .open{
+            display: block;
+        }
+    }
+
+    .sobreMim{
+        p{
+        
+            width: 80vw;
+            
+        }
+    }
+
+}

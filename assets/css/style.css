@@ -29,7 +29,7 @@ header ul {
 }
 header li {
   list-style: none;
-  margin-right: 35px;
+  margin: 0 35px;
 }
 header li a {
   color: #FFF;
@@ -61,6 +61,12 @@ header .logo {
 }
 header .logo:hover {
   opacity: 0.8;
+}
+header .menu-mobile {
+  display: none;
+}
+header .menu-mobile-items {
+  display: none;
 }
 
 .apresentacao {
@@ -102,10 +108,14 @@ header .logo:hover {
 .apresentacao .apre-box1 {
   color: #FFF;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .apresentacao .apre-box1 h1 {
   font-size: 3rem;
-  width: 600px;
+  font-family: 400;
+  width: 70%;
   margin-bottom: 1rem;
 }
 .apresentacao .apre-box1 p {
@@ -197,7 +207,7 @@ header .logo:hover {
 .tecnologias .container_tecnologias {
   border: 0;
   width: 900px;
-  height: 260px;
+  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -250,6 +260,7 @@ header .logo:hover {
   height: 100%;
   border-radius: 7px 7px 0 0;
   transition: 0.2s ease-in-out;
+  object-fit: cover;
 }
 .projetos .container_projetos .box-projeto figure img:hover {
   opacity: 0.8;
@@ -337,4 +348,57 @@ footer .btn-arrow-up {
 }
 footer .btn-arrow-up:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+    padding: 0 4rem;
+  }
+  header nav {
+    display: none;
+  }
+  header .menu-mobile {
+    display: block;
+  }
+  header .menu-mobile button {
+    border: 0;
+    background: 0;
+  }
+  header .menu-mobile button:hover {
+    cursor: pointer;
+  }
+  header .menu-mobile img {
+    width: 30px;
+  }
+  header .menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header .menu-mobile-items {
+    background: rgba(5, 5, 5, 0.8549019608);
+    display: none;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 30vh;
+    left: 0;
+  }
+  header .menu-mobile-items ul {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  header .menu-mobile-items ul a {
+    padding: 10px;
+  }
+  header .open {
+    display: block;
+  }
+  .sobreMim p {
+    width: 80vw;
+  }
 }/*# sourceMappingURL=style.css.map */
