@@ -19,13 +19,13 @@
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" role="heading">
         <a href="/index.html" class="logo"> João Ythalo </a>
-        <nav>
+        <nav role="menu">
             <ul>
-                <li> <a href="#sobreMim"> Sobre mim </a> </li>
-                <li> <a href="#projetos"> Projetos </a> </li>
-                <li> <a href="#contato"> Contato </a> </li>
+                <li role="menuitem"> <a href="#sobreMim"> Sobre mim </a> </li>
+                <li role="menuitem"> <a href="#projetos"> Projetos </a> </li>
+                <li role="menuitem"> <a href="#contato"> Contato </a> </li>
             </ul>
         </nav>
 
@@ -45,19 +45,19 @@
 
     </header> <!-- Header -->
 
-    <main>
+    <main role="main">
         <section class="apresentacao" id="apresentacao">
             <div class="apre-box1">
                 <h1> Portfólio profissional de João Ythalo </h1>
-                <p> Designer gráfico e Desenvolvedor Front-end </p>
+                <p role="text"> Designer gráfico e Desenvolvedor Front-end </p>
             </div>
             <div class="apre-box2">
-                <a href="https://github.com/jottadev" rel="external" target="_blank" title="Abrir perfil no Github">
+                <a href="https://github.com/jottadev" rel="external" target="_blank" title="Abrir perfil no Github" role="button">
                     <img src="assets/imgs/icon_git.svg" alt="icone_do_github">
                 </a>
                 <div class="email-copy">
                     <a href="#" id="email-copy">contato.joaoythalo@gmail.com</a>
-                    <img src="assets/imgs/icons-copiar.png" alt="icone_de_copiar" id="btn-copy" title="Copiar email">
+                    <img src="assets/imgs/icons-copiar.png" alt="icone_de_copiar" id="btn-copy" title="Copiar email" role="button">
                 </div>
             </div>
         </section> <!-- Apresentação  -->
@@ -67,19 +67,19 @@
                 <img src="assets/imgs/photo-profile.jpg" alt="foto_de_perfil">
             </figure>
             <div>
-                <p>
+                <p role="text">
                     Meu nome é João Ythalo, tenho 20 anos e estudante de Tecnologias de Desenvolvimento pela Unopar.
                     Tenho experiência com desenvolvimento web, utilizando principalmente JavaScript. Meu primeiro
                     contato com programação foi em 2021 e até então estudo e trabalho em meus projetos pessoais.
                 </p>
 
                 <div class="box-socialMedias">
-                    <a href="https://www.linkedin.com/in/joaoythalo/" rel="external" target="_blank"
+                    <a href="https://www.linkedin.com/in/joaoythalo/" rel="external" target="_blank" role="button"
                         title="Abrir perfil no Linkedin">
                         <img src="assets/imgs/icon-linkedin.svg" alt="icone_do_linkedin">
                     </a>
 
-                    <a href="https://www.instagram.com/jaoythalo/" rel="external" target="_blank"
+                    <a href="https://www.instagram.com/jaoythalo/" rel="external" target="_blank" role="button"
                         title="Abrir perfil no Instagram">
                         <img src="assets/imgs/icon-instagram.svg" alt="icone_do_instagram">
                     </a>
@@ -87,7 +87,7 @@
             </div>
         </section> <!-- Sobre mim  -->
 
-        <section class="tecnologias">
+        <section class="tecnologias" >
 
             <div class="container_tecnologias">
                 <div class="html">
@@ -128,13 +128,15 @@
                         <div>
                             <h3> Relógio digital </h3>
                         </div>
-                        <div>
-                            <a href="https://github.com/jottadev/relogio_digital" rel="external" target="_blank" title="Abrir repositório">
-                                <img src="assets/imgs/icon-git-black.svg" alt="icone_github">
+                        <div class="buttons-projeto">
+                            <a href="https://github.com/jottadev/relogio_digital" rel="external" target="_blank" title="Abrir repositório" role="button">
+                                Repositório
+                                <img src="assets/imgs/icon-github-60black.svg" alt="icone_github">
                             </a>
 
-                            <a href="https://jottadev.github.io/relogio_digital/" rel="external" target="_blank" title="Abrir site">
-                                <img src="assets/imgs/icone_link_externo.svg" alt="icone_link_externo">
+                            <a href="https://jottadev.github.io/relogio_digital/" rel="external" target="_blank" title="Abrir site" role="button">
+                                Abrir site
+                                <img src="assets/imgs/icon-link-external-60black.svg" alt="icone_link_externo">
                             </a>
                         </div>
                     </div>
@@ -148,13 +150,15 @@
                         <div>
                             <h3> Landing Recipes </h3>
                         </div>
-                        <div>
-                            <a href="https://github.com/jottadev/recipes" rel="external" target="_blank" title="Abrir repositório">
-                                <img src="assets/imgs/icon-git-black.svg" alt="icone-git">
+                        <div class="buttons-projeto">
+                            <a href="https://github.com/jottadev/recipes" rel="external" target="_blank" title="Abrir repositório" role="button">
+                                Repositório
+                                <img src="assets/imgs/icon-github-60black.svg" alt="icone-git">
                             </a>
 
-                            <a href="https://recipesshow.netlify.app/" rel="external" target="_blank" title="Abrir site">
-                                <img src="assets/imgs/icone_link_externo.svg" alt="icone_link_externo">
+                            <a href="https://recipesshow.netlify.app/" rel="external" target="_blank" title="Abrir site" role="button">
+                                Abrir site
+                                <img src="assets/imgs/icon-link-external-60black.svg" alt="icone_link_externo">
                             </a>
                         </div>
                     </div>
@@ -168,13 +172,15 @@
                         <div>
                             <h3> Calculadora </h3>
                         </div>
-                        <div>
-                            <a href="https://github.com/jottadev/calculadora" rel="external" target="_blank" title="Abrir repositório">
-                                <img src="assets/imgs/icon-git-black.svg" alt="icone_github">
+                        <div class="buttons-projeto">
+                            <a href="https://github.com/jottadev/calculadora" rel="external" target="_blank" title="Abrir repositório" role="button">
+                                Repositório
+                                <img src="assets/imgs/icon-github-60black.svg" alt="icone_github">
                             </a>
 
-                            <a href="https://jottadev.github.io/calculadora/" rel="external" target="_blank" title="Abrir site">
-                                <img src="assets/imgs/icone_link_externo.svg" alt="icone_link_externo">
+                            <a href="https://jottadev.github.io/calculadora/" rel="external" target="_blank" title="Abrir site" role="button">
+                                Abrir site
+                                <img src="assets/imgs/icon-link-external-60black.svg" alt="icone_link_externo">
                             </a>
                         </div>
                     </div>
@@ -188,13 +194,15 @@
                         <div>
                             <h3> Landing Selfcare </h3>
                         </div>
-                        <div class="links-projetos">
-                            <a href="https://github.com/jottadev/landing_selfcare" rel="external" target="_blank" title="Abrir repositório">
-                                <img src="assets/imgs/icon-git-black.svg" alt="icone_github">
+                        <div class="buttons-projeto">
+                            <a href="https://github.com/jottadev/landing_selfcare" rel="external" target="_blank" title="Abrir repositório" role="button">
+                                Repositório
+                                <img src="assets/imgs/icon-github-60black.svg" alt="icone_github">
                             </a>
 
-                            <a href="https://selfcareweb.netlify.app/" rel="external" target="_blank" title="Abrir site">
-                                <img src="assets/imgs/icone_link_externo.svg" alt="icone_link_externo">
+                            <a href="https://selfcareweb.netlify.app/" rel="external" target="_blank" title="Abrir site" role="button">
+                                Abrir site
+                                <img src="assets/imgs/icon-link-external-60black.svg" alt="icone_link_externo">
                             </a>
                         </div>
                     </div>
@@ -209,33 +217,34 @@
             <p> Entre em contato </p>
         </div>
         <div class="social-medias-contato">
+            <div class="social-medias-wrapper">
+                <a href="https://github.com/jottadev?tab=repositories" rel="external" target="_blank" title="Abrir perfil no Github" role="button">
+                    <img src="assets/imgs/icon_git.svg" alt="icone_github">
+                </a>
 
-            <a href="https://github.com/jottadev?tab=repositories" rel="external" target="_blank" title="Abrir perfil no Github">
-                <img src="assets/imgs/icon_git.svg" alt="icone_github">
-            </a>
+                <a href="https://www.linkedin.com/in/joaoythalo/" rel="external" target="_blank" title="Abrir perfil no Linkedin" role="button">
+                    <img src="assets/imgs/icon-linkedin.svg" alt="icone_do_linkedin">
+                </a>
 
-            <a href="https://www.linkedin.com/in/joaoythalo/" rel="external" target="_blank" title="Abrir perfil no Linkedin">
-                <img src="assets/imgs/icon-linkedin.svg" alt="icone_do_linkedin">
-            </a>
-
-            <a href="https://www.instagram.com/jaoythalo/" rel="external" target="_blank" title="Abrir perfil no Instagram">
-                <img src="assets/imgs/icon-instagram.svg" alt="icone_do_instagram">
-            </a>
+                <a href="https://www.instagram.com/jaoythalo/" rel="external" target="_blank" title="Abrir perfil no Instagram" role="button">
+                    <img src="assets/imgs/icon-instagram.svg" alt="icone_do_instagram">
+                </a>
+            </div>
 
             <div class="email-copy">
                 <a href="#" id="email-copy">contato.joaoythalo@gmail.com</a>
-                <img src="assets/imgs/icons-copiar.png" alt="icone_de_copiar" id="btn-copy" title="Copiar email">
+                <img src="assets/imgs/icons-copiar.png" alt="icone_de_copiar" id="btn-copy" title="Copiar email" role="button">
             </div>
 
         </div>
 
-        <div>
+        <div class="sub-footer">
             <p> Site desenvolvido por João Ythalo - 2022 </p>
+            <a href="#apresentacao" class="btn-arrow-up">
+                <img src="assets/imgs/arrow-up.svg" alt="icone_seta_para_cima" role="button">
+            </a>
         </div>
 
-        <a href="#apresentacao" class="btn-arrow-up">
-            <img src="assets/imgs/arrow-up.svg" alt="icone_seta_para_cima">
-        </a>
     </footer>
 </body>
 
