@@ -421,7 +421,7 @@ header{
             }
 
             .content-projeto{
-                height: 150px;
+                height: 200px;
                 width: 400px;
                 border-radius: 0 0 7px 7px;
 
@@ -436,7 +436,7 @@ header{
                 padding: 23px 0;
 
                 position: absolute;
-                bottom: -80px;
+                bottom: -140px;
                 transition: .2s ease-in-out;
 
                 &:hover{
@@ -451,6 +451,8 @@ header{
                 .buttons-projeto{
                     display: flex;
                     flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
                     flex-wrap: wrap;
                 }
 
@@ -459,7 +461,7 @@ header{
                     width: 170px;
                     height: 40px;
                     border-radius: 7px;
-                    margin: 0 5px;
+                    margin: 5px;
 
                     text-decoration: none;
                     color:#292929;
